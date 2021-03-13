@@ -1,0 +1,3 @@
+struct Constans{
+    static let DengageIntegrationKey = "_s_l_ruScB1ROak3QvdNjRoK_p_l_gjrmXtefZnbRXoMPwQk6EYB7pbYUS73RaJ9uKf6tv36G20VNCorovSqU1fU10Rt2rAeZGVoQnTUP8phdzcExZqVh_p_l_WSjJHuydDJllZ86B9PxGrSxE59nlJVgnwoSKwwwg_e_q__e_q_"
+}
