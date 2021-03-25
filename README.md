@@ -1,5 +1,5 @@
 
-# Dengage iOS Sdk 
+# Dengage iOS SDK 
 ## Useful Links
 - [SDK Documentation](https://dev.dengage.com/mobile-sdk/ios/)
 - [Admin Panel](https://appdev.dengage.com/)
@@ -7,14 +7,14 @@
 ## Version Support
 The iOS SDK supports iOS 10.0+.
 
-## Sdk Implementation
+## SDK Implementation
 - `Example` - Contains integration examples for the iOS SDK.
 	- The Example App uses our [CocoaPods](http://guides.cocoapods.org/) integration (`Dengage.Framework`), so you must :
 	  1. [Install CocoaPods](http://guides.cocoapods.org/using/getting-started.html)
 	  2. Run `pod install` in the `Example` directory
 	  3. Open the `ExampleApp.xcworkspace` to open the project.
 
-## Sample App Content
+## Example App Content
 
 ### 1 - Adding Endpoint Configuration (See [Info.plist](https://github.com/dengage-tech/dengage-ios-sdk-sample/blob/master/ExampleApp/Info.plist))
 - `DengageEventApiUrl` (meta-data) -> Event api url of Dengage (Optional parameter)
