@@ -26,19 +26,22 @@ final class RootViewController: UITabBarController {
         let eventNavigationController = UINavigationController(rootViewController: EventViewController())
         let inboxNavigationController = UINavigationController(rootViewController: InboxMessagesViewController())
         let inAppMessageViewController = UINavigationController(rootViewController: InAppMessageViewController())
+        let tagsNavigationController = UINavigationController(rootViewController: TagsViewController())
         let subscriptionTabBarItem = UITabBarItem(title: "Subscription", image: nil, tag: 0)
         let eventTabBarItem = UITabBarItem(title: "Event Collection", image: nil, tag: 1)
         let inboxTabBarItem = UITabBarItem(title: "Inbox", image: nil, tag: 2)
         let inAppTabBarItem = UITabBarItem(title: "InApp", image: nil, tag: 3)
-        
+        let tagsTabBarItem = UITabBarItem(title: "Tags", image: nil, tag: 4)
         return RootViewController(controllers: [subscriptionNavigationController,
                                                 eventNavigationController,
                                                 inboxNavigationController,
-                                                inAppMessageViewController],
+                                                inAppMessageViewController,
+                                                tagsNavigationController],
                                   tabBarItems: [subscriptionTabBarItem,
                                                 eventTabBarItem,
                                                 inboxTabBarItem,
-                                                inAppTabBarItem])
+                                                inAppTabBarItem,
+                                                tagsTabBarItem])
         
     }
 }
