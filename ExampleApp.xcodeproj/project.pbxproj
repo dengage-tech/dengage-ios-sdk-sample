@@ -22,6 +22,7 @@
 		75FC73842570788A00B7C060 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FC73832570788A00B7C060 /* EventViewController.swift */; };
 		75FC73852570788A00B7C060 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FC73832570788A00B7C060 /* EventViewController.swift */; };
 		A09CA07825FA9C30001482CA /* InAppMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CA07725FA9C30001482CA /* InAppMessageViewController.swift */; };
+		A0FE8C4E261083ED002CDC29 /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FE8C4D261083ED002CDC29 /* TagsViewController.swift */; };
 		C97F6758974C3EB4D0E3BFDD /* Pods_ExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F496E790B5F8ACF330E6CE69 /* Pods_ExampleApp.framework */; };
 		DF0CB9AF8F7A0890A673B8D8 /* Pods_ExampleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBBEC11DEB4717C1CC99C6D /* Pods_ExampleAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		75FC73832570788A00B7C060 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		7BA14A248B43CCB5AD986421 /* Pods-ExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleApp.release.xcconfig"; path = "Target Support Files/Pods-ExampleApp/Pods-ExampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		A09CA07725FA9C30001482CA /* InAppMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppMessageViewController.swift; sourceTree = "<group>"; };
+		A0FE8C4D261083ED002CDC29 /* TagsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
 		B60F2A29B5818E61A93902F8 /* Pods-ExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleApp.debug.xcconfig"; path = "Target Support Files/Pods-ExampleApp/Pods-ExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F496E790B5F8ACF330E6CE69 /* Pods_ExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -166,6 +168,7 @@
 		75FC737B2570783E00B7C060 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A0FE8C4C261083ED002CDC29 /* Tags */,
 				A09CA07625FA9C08001482CA /* InAppMessage */,
 				753C19FA257D1B84008CF50E /* Event */,
 				753C19F9257D1B7D008CF50E /* Subscription */,
@@ -180,6 +183,14 @@
 				A09CA07725FA9C30001482CA /* InAppMessageViewController.swift */,
 			);
 			path = InAppMessage;
+			sourceTree = "<group>";
+		};
+		A0FE8C4C261083ED002CDC29 /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				A0FE8C4D261083ED002CDC29 /* TagsViewController.swift */,
+			);
+			path = Tags;
 			sourceTree = "<group>";
 		};
 		FDF3AF4D1479D737516A5DC2 /* Pods */ = {
@@ -368,6 +379,7 @@
 				75FC73842570788A00B7C060 /* EventViewController.swift in Sources */,
 				753C19FC257D1BAA008CF50E /* InboxMessageTableViewCell.swift in Sources */,
 				A09CA07825FA9C30001482CA /* InAppMessageViewController.swift in Sources */,
+				A0FE8C4E261083ED002CDC29 /* TagsViewController.swift in Sources */,
 				75A51BC02570861D000415E0 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
