@@ -69,6 +69,7 @@ final class InAppMessageViewController: UIViewController {
         guard let text = screenNameTextField.text else {return}
         Dengage.setNavigation(screenName:text)
         view.endEditing(true)
+        navigationButton.setTitleColor(.black, for: .normal)
     }
 }
 
@@ -77,5 +78,10 @@ extension InAppMessageViewController:UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        navigationButton.setTitleColor(.blue, for: .normal)
+        return true
     }
 }
