@@ -13,7 +13,8 @@ final class InAppMessageViewController: UIViewController {
     private lazy var deviceIdTextView:UITextView = {
         let view = UITextView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        view.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        view.isUserInteractionEnabled = false
         return view
     }()
     
@@ -23,6 +24,7 @@ final class InAppMessageViewController: UIViewController {
         view.textAlignment = .center
         view.borderStyle = .bezel
         view.autocapitalizationType = .none
+        view.delegate = self
         return view
     }()
     
@@ -58,7 +60,7 @@ final class InAppMessageViewController: UIViewController {
     private func setupUI(){
         title = "In"
         view.addSubview(stackView)
-        stackView.centerYAnchor.constraint(equalTo:view.centerYAnchor).isActive = true
+        stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 80).isActive = true
         stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15).isActive = true
     }
@@ -66,8 +68,14 @@ final class InAppMessageViewController: UIViewController {
     @objc private func didTapNavigationButton(){
         guard let text = screenNameTextField.text else {return}
         Dengage.setNavigation(screenName:text)
+        view.endEditing(true)
     }
 }
 
 
-
+extension InAppMessageViewController:UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+}

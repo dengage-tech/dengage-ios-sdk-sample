@@ -15,6 +15,7 @@ final class TagsViewController: UIViewController {
         view.textAlignment = .center
         view.borderStyle = .bezel
         view.autocapitalizationType = .none
+        view.delegate = self
         return view
     }()
     
@@ -24,6 +25,7 @@ final class TagsViewController: UIViewController {
         view.textAlignment = .center
         view.borderStyle = .bezel
         view.autocapitalizationType = .none
+        view.delegate = self
         return view
     }()
     
@@ -33,6 +35,7 @@ final class TagsViewController: UIViewController {
         view.textAlignment = .center
         view.borderStyle = .bezel
         view.autocapitalizationType = .none
+        view.delegate = self
         return view
     }()
     
@@ -42,6 +45,7 @@ final class TagsViewController: UIViewController {
         view.textAlignment = .center
         view.borderStyle = .bezel
         view.autocapitalizationType = .none
+        view.delegate = self
         return view
     }()
     
@@ -51,6 +55,7 @@ final class TagsViewController: UIViewController {
         view.textAlignment = .center
         view.borderStyle = .bezel
         view.autocapitalizationType = .none
+        view.delegate = self
         return view
     }()
     
@@ -89,7 +94,7 @@ final class TagsViewController: UIViewController {
     private func setupUI(){
         title = "Tags"
         view.addSubview(stackView)
-        stackView.centerYAnchor.constraint(equalTo:view.centerYAnchor).isActive = true
+        stackView.topAnchor.constraint(equalTo: view.safeAreaTopAnchor, constant: 10).isActive = true
         stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15).isActive = true
     }
@@ -110,7 +115,9 @@ final class TagsViewController: UIViewController {
     }
 }
 
-
-
-
-
+extension TagsViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+}

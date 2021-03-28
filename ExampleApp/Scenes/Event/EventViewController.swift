@@ -10,7 +10,7 @@ final class EventViewController: UIViewController {
         view.textAlignment = .center
         view.borderStyle = .bezel
         view.textColor = .black
-        view.backgroundColor = .blue
+        view.delegate = self
         return view
     }()
         
@@ -59,8 +59,6 @@ final class EventViewController: UIViewController {
             .compactMap{$0 as? EventParameterItemView}
             .compactMap{$0.values}
             .reduce(into: [:]) { $0[$1.0] = $1.1 }
-
-
         Dengage.SendDeviceEvent(toEventTable: eventName, andWithEventDetails: parameters)
     }
     
@@ -83,7 +81,6 @@ extension EventViewController{
             view.placeholder = "key"
             view.borderStyle = .bezel
             view.textColor = .black
-            view.backgroundColor = .blue
             return view
         }()
         
@@ -92,7 +89,6 @@ extension EventViewController{
             view.placeholder = "value"
             view.borderStyle = .bezel
             view.textColor = .black
-            view.backgroundColor = .blue
             return view
         }()
         
@@ -122,5 +118,13 @@ extension EventViewController{
             guard let key = keyTextField.text, let value = valueTextField.text else {return nil}
             return (key,value)
         }
+    }
+}
+
+
+extension EventViewController:UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 }
