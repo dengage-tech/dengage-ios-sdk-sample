@@ -58,7 +58,7 @@ final class InAppMessageViewController: UIViewController {
     }
     
     private func setupUI(){
-        title = "In"
+        title = "In-App"
         view.addSubview(stackView)
         stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 80).isActive = true
         stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15).isActive = true
