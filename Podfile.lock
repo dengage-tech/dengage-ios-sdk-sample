@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Dengage.Framework:
-    :commit: df0e545aaa25df0edc8cfcd44c5a74ab7a52473d
+    :commit: 362c725d4845581cff61fde74d7080f8e09c0e8e
     :git: https://github.com/whitehorse-technology/Dengage.Framework.git
 
 SPEC CHECKSUMS:
@@ -19,4 +19,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 7659c3fc06da92a2daeee2cde6932561bbb3a9c0
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.9.1
