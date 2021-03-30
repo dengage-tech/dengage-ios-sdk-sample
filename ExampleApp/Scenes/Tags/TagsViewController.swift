@@ -81,6 +81,9 @@ final class TagsViewController: UIViewController {
         return view
     }()
     
+    let changeTimeDatePicker = UIDatePicker()
+    let removeTimeDatePicker = UIDatePicker()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -97,21 +100,51 @@ final class TagsViewController: UIViewController {
         stackView.topAnchor.constraint(equalTo: view.safeAreaTopAnchor, constant: 10).isActive = true
         stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15).isActive = true
+        
+        createRemoveDatePicker()
+        createChangeDatePicker()
     }
     
     @objc private func didTapSendButton(){
         guard let name = tagNameTextField.text else {return}
         guard let value = tagValueTextField.text else {return}
-        let changeTime = changeTimeTextField.text
         let changeValue = changeValueTextField.text
-        let removeTime = removeTimeTextField.text
-        var parameters = [String:String]()
-        parameters["tag"] = name
-        parameters["value"] = value
-        parameters["changeTime"] = changeTime
-        parameters["changeValue"] = changeValue
-        parameters["removeTime"] = removeTime
-        Dengage.setTags([parameters])
+        let tag = TagItem(tagName: name,
+                          tagValue: value,
+                          changeTime: changeTimeDatePicker.date,
+                          removeTime: removeTimeDatePicker.date,
+                          changeValue: changeValue)
+        Dengage.setTags([tag])
+    }
+    
+    func createChangeDatePicker() {
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: nil, action: #selector(changeDateDoneButtonClicked))
+        toolbar.setItems([doneButton], animated: true)
+        changeTimeTextField.inputAccessoryView = toolbar
+        changeTimeTextField.inputView = changeTimeDatePicker
+        changeTimeDatePicker.datePickerMode = .dateAndTime
+    }
+    
+    func createRemoveDatePicker() {
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: nil, action: #selector(removeDateDoneButtonClicked))
+        toolbar.setItems([doneButton], animated: true)
+        removeTimeTextField.inputAccessoryView = toolbar
+        removeTimeTextField.inputView = removeTimeDatePicker
+        removeTimeDatePicker.datePickerMode = .dateAndTime
+    }
+    
+    @objc func changeDateDoneButtonClicked(){
+        changeTimeTextField.text = changeTimeDatePicker.date.description
+        self.view.endEditing(true)
+    }
+    
+    @objc func removeDateDoneButtonClicked(){
+        changeTimeTextField.text = changeTimeDatePicker.date.description
+        self.view.endEditing(true)
     }
 }
 
