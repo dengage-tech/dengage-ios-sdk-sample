@@ -125,6 +125,7 @@ final class TagsViewController: UIViewController {
         changeTimeTextField.inputAccessoryView = toolbar
         changeTimeTextField.inputView = changeTimeDatePicker
         changeTimeDatePicker.datePickerMode = .dateAndTime
+        changeTimeDatePicker.addTarget(self, action: #selector(removeDateDoneButtonClicked), for: .valueChanged)
     }
     
     func createRemoveDatePicker() {
@@ -135,6 +136,7 @@ final class TagsViewController: UIViewController {
         removeTimeTextField.inputAccessoryView = toolbar
         removeTimeTextField.inputView = removeTimeDatePicker
         removeTimeDatePicker.datePickerMode = .dateAndTime
+        removeTimeDatePicker.addTarget(self, action: #selector(changeDateDoneButtonClicked), for: .valueChanged)
     }
     
     @objc func changeDateDoneButtonClicked(){
@@ -143,7 +145,7 @@ final class TagsViewController: UIViewController {
     }
     
     @objc func removeDateDoneButtonClicked(){
-        changeTimeTextField.text = changeTimeDatePicker.date.description
+        removeTimeTextField.text = changeTimeDatePicker.date.description
         self.view.endEditing(true)
     }
 }
