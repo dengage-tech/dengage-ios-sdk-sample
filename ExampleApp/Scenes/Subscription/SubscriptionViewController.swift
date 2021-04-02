@@ -6,7 +6,8 @@ final class SubscriptionViewController: UIViewController {
     private lazy var deviceIdTextView:UITextView = {
         let view = UITextView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.heightAnchor.constraint(equalToConstant: 350).isActive = true
+        view.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        view.isUserInteractionEnabled = false
         return view
     }()
     
@@ -15,6 +16,7 @@ final class SubscriptionViewController: UIViewController {
         view.placeholder = "email@email.com"
         view.textAlignment = .center
         view.borderStyle = .bezel
+        view.delegate = self
         return view
     }()
     
@@ -27,7 +29,7 @@ final class SubscriptionViewController: UIViewController {
     }()
     
     private lazy var stackView:UIStackView = {
-        let view = UIStackView(arrangedSubviews: [deviceIdTextView,emailTextField,registerButton])
+        let view = UIStackView(arrangedSubviews: [deviceIdTextView,emailTextField,registerButton,UIView()])
         view.axis = .vertical
         view.translatesAutoresizingMaskIntoConstraints = false
         view.spacing = 10
@@ -52,8 +54,13 @@ final class SubscriptionViewController: UIViewController {
     @objc private func didTapRegisterButton(){
         guard let text = emailTextField.text else {return}
         Dengage.setContactKey(contactKey: text)
+        view.endEditing(true)
     }
 }
 
-
-
+extension SubscriptionViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+}
