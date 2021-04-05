@@ -6,6 +6,7 @@ target 'ExampleApp' do
   use_frameworks!
   # for local development
   pod 'Dengage.Framework', :git => 'https://github.com/whitehorse-technology/Dengage.Framework.git', :branch => 'develop'
+  pod 'Dengage.Framework.Extensions','1.0.10'
   
   target 'DengageNotificationServiceExtension' do
       inherit! :search_paths
