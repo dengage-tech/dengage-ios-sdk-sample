@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Dengage.Framework:
-    :commit: da8d7f1741374889d2561b49fe1784fc1f78f01a
+    :commit: 3214b8638b803e4cccc9b02a499dff1a07b1a329
     :git: https://github.com/whitehorse-technology/Dengage.Framework.git
 
 SPEC CHECKSUMS:

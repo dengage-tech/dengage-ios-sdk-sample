@@ -109,10 +109,23 @@ final class TagsViewController: UIViewController {
         guard let name = tagNameTextField.text else {return}
         guard let value = tagValueTextField.text else {return}
         let changeValue = changeValueTextField.text
+        let changeTimeText = changeTimeTextField.text
+        let removeTimeText = removeTimeTextField.text
+        var changeTime : Date? = nil
+        var removeTime : Date? = nil
+        
+        if !(changeTimeText?.isEmpty ?? false) {
+            changeTime = changeTimeDatePicker.date
+        }
+        
+        if !(removeTimeText?.isEmpty ?? false) {
+            removeTime = removeTimeDatePicker.date
+        }
+         
         let tag = TagItem(tagName: name,
                           tagValue: value,
-                          changeTime: changeTimeDatePicker.date,
-                          removeTime: removeTimeDatePicker.date,
+                          changeTime: changeTime,
+                          removeTime: removeTime,
                           changeValue: changeValue)
         Dengage.setTags([tag])
     }
@@ -125,7 +138,7 @@ final class TagsViewController: UIViewController {
         changeTimeTextField.inputAccessoryView = toolbar
         changeTimeTextField.inputView = changeTimeDatePicker
         changeTimeDatePicker.datePickerMode = .dateAndTime
-        changeTimeDatePicker.addTarget(self, action: #selector(removeDateDoneButtonClicked), for: .valueChanged)
+        changeTimeDatePicker.addTarget(self, action: #selector(changeDateDoneButtonClicked), for: .valueChanged)
     }
     
     func createRemoveDatePicker() {
@@ -136,7 +149,7 @@ final class TagsViewController: UIViewController {
         removeTimeTextField.inputAccessoryView = toolbar
         removeTimeTextField.inputView = removeTimeDatePicker
         removeTimeDatePicker.datePickerMode = .dateAndTime
-        removeTimeDatePicker.addTarget(self, action: #selector(changeDateDoneButtonClicked), for: .valueChanged)
+        removeTimeDatePicker.addTarget(self, action: #selector(removeDateDoneButtonClicked), for: .valueChanged)
     }
     
     @objc func changeDateDoneButtonClicked(){
@@ -145,7 +158,7 @@ final class TagsViewController: UIViewController {
     }
     
     @objc func removeDateDoneButtonClicked(){
-        removeTimeTextField.text = changeTimeDatePicker.date.description
+        removeTimeTextField.text = removeTimeDatePicker.date.description
         self.view.endEditing(true)
     }
 }
