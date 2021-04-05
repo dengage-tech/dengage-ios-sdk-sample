@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4176D2D126171D2D0051C0AF /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4176D2D026171D2D0051C0AF /* NotificationService.swift */; };
+		4176D2D526171D2D0051C0AF /* DengageNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4176D2CE26171D2D0051C0AF /* DengageNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		637742D19A4BCE6FAB3E543A /* Pods_DengageNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6648DF5BC237B545089F2864 /* Pods_DengageNotificationServiceExtension.framework */; };
 		753C19F5257D1B57008CF50E /* InboxMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C19F4257D1B57008CF50E /* InboxMessagesViewController.swift */; };
 		753C19FC257D1BAA008CF50E /* InboxMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C19FB257D1BAA008CF50E /* InboxMessageTableViewCell.swift */; };
 		75A51BC02570861D000415E0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A51BBF2570861D000415E0 /* Extensions.swift */; };
@@ -28,6 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4176D2D326171D2D0051C0AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75FC731E25706DEB00B7C060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4176D2CD26171D2D0051C0AF;
+			remoteInfo = DengageNotificationServiceExtension;
+		};
 		75FC733C25706DED00B7C060 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 75FC731E25706DEB00B7C060 /* Project object */;
@@ -37,10 +47,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4176D2D926171D2D0051C0AF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4176D2D526171D2D0051C0AF /* DengageNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0CC22C5920777FE8547FCE96 /* Pods-DengageNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DengageNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-DengageNotificationServiceExtension/Pods-DengageNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		4176D2CE26171D2D0051C0AF /* DengageNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DengageNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4176D2D026171D2D0051C0AF /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		4176D2D226171D2D0051C0AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45D135AFA06741FA2D589A2B /* Pods-ExampleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleAppTests.release.xcconfig"; path = "Target Support Files/Pods-ExampleAppTests/Pods-ExampleAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		4EA1177D579E3201AD90BB98 /* Pods-ExampleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ExampleAppTests/Pods-ExampleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FBBEC11DEB4717C1CC99C6D /* Pods_ExampleAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6648DF5BC237B545089F2864 /* Pods_DengageNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DengageNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		753C19F4257D1B57008CF50E /* InboxMessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxMessagesViewController.swift; sourceTree = "<group>"; };
 		753C19FB257D1BAA008CF50E /* InboxMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxMessageTableViewCell.swift; sourceTree = "<group>"; };
 		75A51BBF2570861D000415E0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -62,10 +91,19 @@
 		A09CA07725FA9C30001482CA /* InAppMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppMessageViewController.swift; sourceTree = "<group>"; };
 		A0FE8C4D261083ED002CDC29 /* TagsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
 		B60F2A29B5818E61A93902F8 /* Pods-ExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleApp.debug.xcconfig"; path = "Target Support Files/Pods-ExampleApp/Pods-ExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C7DD8BD9CCD6D3429B6E8A35 /* Pods-DengageNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DengageNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-DengageNotificationServiceExtension/Pods-DengageNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		F496E790B5F8ACF330E6CE69 /* Pods_ExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4176D2CB26171D2D0051C0AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637742D19A4BCE6FAB3E543A /* Pods_DengageNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75FC732325706DEB00B7C060 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,11 +123,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4176D2CF26171D2D0051C0AF /* DengageNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4176D2D026171D2D0051C0AF /* NotificationService.swift */,
+				4176D2D226171D2D0051C0AF /* Info.plist */,
+			);
+			path = DengageNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		4951133542D6209B0A7F8681 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				F496E790B5F8ACF330E6CE69 /* Pods_ExampleApp.framework */,
 				4FBBEC11DEB4717C1CC99C6D /* Pods_ExampleAppTests.framework */,
+				6648DF5BC237B545089F2864 /* Pods_DengageNotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,6 +172,7 @@
 			children = (
 				75FC732825706DEB00B7C060 /* ExampleApp */,
 				75FC733E25706DED00B7C060 /* ExampleAppTests */,
+				4176D2CF26171D2D0051C0AF /* DengageNotificationServiceExtension */,
 				75FC732725706DEB00B7C060 /* Products */,
 				FDF3AF4D1479D737516A5DC2 /* Pods */,
 				4951133542D6209B0A7F8681 /* Frameworks */,
@@ -135,6 +184,7 @@
 			children = (
 				75FC732625706DEB00B7C060 /* ExampleApp.app */,
 				75FC733B25706DED00B7C060 /* ExampleAppTests.xctest */,
+				4176D2CE26171D2D0051C0AF /* DengageNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,6 +250,8 @@
 				7BA14A248B43CCB5AD986421 /* Pods-ExampleApp.release.xcconfig */,
 				4EA1177D579E3201AD90BB98 /* Pods-ExampleAppTests.debug.xcconfig */,
 				45D135AFA06741FA2D589A2B /* Pods-ExampleAppTests.release.xcconfig */,
+				C7DD8BD9CCD6D3429B6E8A35 /* Pods-DengageNotificationServiceExtension.debug.xcconfig */,
+				0CC22C5920777FE8547FCE96 /* Pods-DengageNotificationServiceExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -207,6 +259,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4176D2CD26171D2D0051C0AF /* DengageNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4176D2D626171D2D0051C0AF /* Build configuration list for PBXNativeTarget "DengageNotificationServiceExtension" */;
+			buildPhases = (
+				4028120F23BBCDA2069C9737 /* [CP] Check Pods Manifest.lock */,
+				4176D2CA26171D2D0051C0AF /* Sources */,
+				4176D2CB26171D2D0051C0AF /* Frameworks */,
+				4176D2CC26171D2D0051C0AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DengageNotificationServiceExtension;
+			productName = DengageNotificationServiceExtension;
+			productReference = 4176D2CE26171D2D0051C0AF /* DengageNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		75FC732525706DEB00B7C060 /* ExampleApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75FC734F25706DED00B7C060 /* Build configuration list for PBXNativeTarget "ExampleApp" */;
@@ -216,10 +286,12 @@
 				75FC732325706DEB00B7C060 /* Frameworks */,
 				75FC732425706DEB00B7C060 /* Resources */,
 				5F830DE55EDEEE38091C9BFC /* [CP] Embed Pods Frameworks */,
+				4176D2D926171D2D0051C0AF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4176D2D426171D2D0051C0AF /* PBXTargetDependency */,
 			);
 			name = ExampleApp;
 			productName = ExampleApp;
@@ -251,9 +323,12 @@
 		75FC731E25706DEB00B7C060 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					4176D2CD26171D2D0051C0AF = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					75FC732525706DEB00B7C060 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -278,11 +353,19 @@
 			targets = (
 				75FC732525706DEB00B7C060 /* ExampleApp */,
 				75FC733A25706DED00B7C060 /* ExampleAppTests */,
+				4176D2CD26171D2D0051C0AF /* DengageNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4176D2CC26171D2D0051C0AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75FC732425706DEB00B7C060 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,6 +385,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4028120F23BBCDA2069C9737 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DengageNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5F830DE55EDEEE38091C9BFC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,6 +471,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4176D2CA26171D2D0051C0AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4176D2D126171D2D0051C0AF /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75FC732225706DEB00B7C060 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,6 +510,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4176D2D426171D2D0051C0AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4176D2CD26171D2D0051C0AF /* DengageNotificationServiceExtension */;
+			targetProxy = 4176D2D326171D2D0051C0AF /* PBXContainerItemProxy */;
+		};
 		75FC733D25706DED00B7C060 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 75FC732525706DEB00B7C060 /* ExampleApp */;
@@ -416,6 +534,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4176D2D726171D2D0051C0AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7DD8BD9CCD6D3429B6E8A35 /* Pods-DengageNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWGDPBV9N5;
+				INFOPLIST_FILE = DengageNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dengage.Example.DengageNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4176D2D826171D2D0051C0AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CC22C5920777FE8547FCE96 /* Pods-DengageNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWGDPBV9N5;
+				INFOPLIST_FILE = DengageNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dengage.Example.DengageNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		75FC734D25706DED00B7C060 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -536,10 +696,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B60F2A29B5818E61A93902F8 /* Pods-ExampleApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ExampleApp/ExampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = ZWGDPBV9N5;
 				INFOPLIST_FILE = ExampleApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -559,10 +721,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BA14A248B43CCB5AD986421 /* Pods-ExampleApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ExampleApp/ExampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = ZWGDPBV9N5;
 				INFOPLIST_FILE = ExampleApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -625,6 +789,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4176D2D626171D2D0051C0AF /* Build configuration list for PBXNativeTarget "DengageNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4176D2D726171D2D0051C0AF /* Debug */,
+				4176D2D826171D2D0051C0AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		75FC732125706DEB00B7C060 /* Build configuration list for PBXProject "ExampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

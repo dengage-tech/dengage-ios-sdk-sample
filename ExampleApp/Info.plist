@@ -17,11 +17,11 @@
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>DengageApiUrl</key>
-	<string>https://pushdev.dengage.com</string>
+	<string>https://rupush.dengage.com</string>
 	<key>DengageEventApiUrl</key>
-	<string>https://eventdev.dengage.com</string>
+	<string>https://ruevent.dengage.com</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>

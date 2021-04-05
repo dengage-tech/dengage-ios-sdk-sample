@@ -1,22 +1,22 @@
 PODS:
-  - Dengage.Framework (2.5.23)
+  - Dengage.Framework (2.5.24)
 
 DEPENDENCIES:
-  - Dengage.Framework (from `https://github.com/whitehorse-technology/Dengage.Framework.git`, branch `feature/Tag`)
+  - Dengage.Framework (from `https://github.com/whitehorse-technology/Dengage.Framework.git`, branch `develop`)
 
 EXTERNAL SOURCES:
   Dengage.Framework:
-    :branch: feature/Tag
+    :branch: develop
     :git: https://github.com/whitehorse-technology/Dengage.Framework.git
 
 CHECKOUT OPTIONS:
   Dengage.Framework:
-    :commit: 362c725d4845581cff61fde74d7080f8e09c0e8e
+    :commit: da8d7f1741374889d2561b49fe1784fc1f78f01a
     :git: https://github.com/whitehorse-technology/Dengage.Framework.git
 
 SPEC CHECKSUMS:
-  Dengage.Framework: d3f56fac1a1a3cc6e65c86245f9e878a14a77223
+  Dengage.Framework: 33e1cb63dead666a409557de34729fad1d3aa9ee
 
-PODFILE CHECKSUM: 7659c3fc06da92a2daeee2cde6932561bbb3a9c0
+PODFILE CHECKSUM: 91e1df1352da90b12fbd4313c1cdda6e90ed9a34
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.1
