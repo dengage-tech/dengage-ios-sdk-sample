@@ -1,6 +1,6 @@
 
 import UIKit
-import struct Dengage_Framework.DengageMessage
+import class Dengage_Framework.DengageMessage
 
 final class InboxMessageTableViewCell: UITableViewCell {
 
