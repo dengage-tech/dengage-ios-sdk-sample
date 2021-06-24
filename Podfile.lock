@@ -1,5 +1,5 @@
 PODS:
-  - Dengage.Framework (3.0.3)
+  - Dengage.Framework (3.0.6)
   - Dengage.Framework.Extensions (1.0.10)
 
 DEPENDENCIES:
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../Dengage.Framework"
 
 SPEC CHECKSUMS:
-  Dengage.Framework: 7be58d3521d2423927b681985eee915ce0980efb
+  Dengage.Framework: 6e446536bb75dbe042b3128452f45216b63cda80
   Dengage.Framework.Extensions: b432d61008e8a0c7ab12331cf35efb3f54112d10
 
 PODFILE CHECKSUM: cd535b9e1a5d8168a51363faa972a41aaf0957a2
