@@ -1,23 +1,16 @@
 PODS:
-  - Dengage.Framework (3.0.6)
-  - Dengage.Framework.Extensions (1.0.10)
+  - Dengage.Framework (3.0.7)
 
 DEPENDENCIES:
   - Dengage.Framework (from `../Dengage.Framework`)
-  - Dengage.Framework.Extensions (= 1.0.10)
-
-SPEC REPOS:
-  trunk:
-    - Dengage.Framework.Extensions
 
 EXTERNAL SOURCES:
   Dengage.Framework:
     :path: "../Dengage.Framework"
 
 SPEC CHECKSUMS:
-  Dengage.Framework: 6e446536bb75dbe042b3128452f45216b63cda80
-  Dengage.Framework.Extensions: b432d61008e8a0c7ab12331cf35efb3f54112d10
+  Dengage.Framework: ee9858f9c3d648837067e314f81d374723fe061e
 
-PODFILE CHECKSUM: cd535b9e1a5d8168a51363faa972a41aaf0957a2
+PODFILE CHECKSUM: 9e939b8994eb402faf23ef296c51a5167140e103
 
 COCOAPODS: 1.10.1
