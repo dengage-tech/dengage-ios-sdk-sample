@@ -1,6 +1,5 @@
-
-
-
 struct Constans{
-    static let DengageIntegrationKey = "Ol8rdTmu908_s_l_g30r_s_l_hrRfDQqKK_s_l_U55YaFry8gyVD8XnP8bSpJQHa3KDStxSvlFgvQZQaQZ2WHoHbAxM1KwoH9VwC_p_l_zwq5js69yYCTjp3y2fJ4d_s_l_dZnvlXDI_p_l_Qup_s_l_d67l"
+    static let DengageIntegrationKey = "anyen0DePWzTrofTKyWbUr7o9s1P2H06wrjO_p_l_CkLX98ntqLs_p_l_l9LycO0xow8YhvmEIj9KmgWL894EEW17TPT5fckiM4rqZiyOaVPmlp4vDFHtznBMBXSXLeNJSUOHg2O1doaCnBkmixvDgrTSvCqNA_e_q__e_q_"
+    
+    //    static let DengageIntegrationKey = "_s_l_ruScB1ROak3QvdNjRoK_p_l_gjrmXtefZnbRXoMPwQk6EYB7pbYUS73RaJ9uKf6tv36G20VNCorovSqU1fU10Rt2rAeZGVoQnTUP8phdzcExZqVh_p_l_WSjJHuydDJllZ86B9PxGrSxE59nlJVgnwoSKwwwg_e_q__e_q_"
 }
