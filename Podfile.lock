@@ -1,16 +1,22 @@
 PODS:
-  - Dengage.Framework (3.0.7)
+  - Dengage.Framework (4.0.0)
 
 DEPENDENCIES:
-  - Dengage.Framework (from `../Dengage.Framework`)
+  - Dengage.Framework (from `https://github.com/whitehorse-technology/Dengage.Framework.git`, branch `master`)
 
 EXTERNAL SOURCES:
   Dengage.Framework:
-    :path: "../Dengage.Framework"
+    :branch: master
+    :git: https://github.com/whitehorse-technology/Dengage.Framework.git
+
+CHECKOUT OPTIONS:
+  Dengage.Framework:
+    :commit: fc06dea06fdcdeeed56b2d17683e7facc4f66c1a
+    :git: https://github.com/whitehorse-technology/Dengage.Framework.git
 
 SPEC CHECKSUMS:
-  Dengage.Framework: ee9858f9c3d648837067e314f81d374723fe061e
+  Dengage.Framework: 335464af36c11b045abd67697a0bf1b908095298
 
-PODFILE CHECKSUM: 9e939b8994eb402faf23ef296c51a5167140e103
+PODFILE CHECKSUM: 55ae3ac74010b437f6759f6d6d105ff112cc173a
 
 COCOAPODS: 1.10.1

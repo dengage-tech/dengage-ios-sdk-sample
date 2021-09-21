@@ -19,9 +19,9 @@
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>DengageApiUrl</key>
-	<string>https://pushdev.dengage.com</string>
+	<string>https://push.dengage.com</string>
 	<key>DengageEventApiUrl</key>
-	<string>https://eventdev.dengage.com</string>
+	<string>https://event.dengage.com</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>

@@ -4,20 +4,18 @@ platform :ios, '10.0'
 target 'ExampleApp' do
 
   use_frameworks!
-  # for local development
-	pod 'Dengage.Framework', :path => '../Dengage.Framework'
 
-  
+  pod 'Dengage.Framework', :git => 'https://github.com/whitehorse-technology/Dengage.Framework.git', :branch => 'master'
+
   target 'DengageNotificationServiceExtension' do
-    pod 'Dengage.Framework', :path => '../Dengage.Framework'
+    pod 'Dengage.Framework', :git => 'https://github.com/whitehorse-technology/Dengage.Framework.git', :branch => 'master'
   end
   
   target 'DengageContentExtension' do
     use_frameworks!
-    pod 'Dengage.Framework', :path => '../Dengage.Framework'
+    pod 'Dengage.Framework', :git => 'https://github.com/whitehorse-technology/Dengage.Framework.git', :branch => 'master'
   end
-  # Pods for ExampleApp
-  #pod 'Dengage.Framework'
+  
   target 'ExampleAppTests' do
     inherit! :search_paths
     # Pods for testing
